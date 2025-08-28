@@ -32,6 +32,7 @@ bonpreu-data-engineer-demo/
 ├─ requirements.txt       # Dependències Python
 └─ README.md
 
+
 ---
 
 ## 🚀 Execució local
