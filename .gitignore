@@ -1,0 +1,71 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Entorn virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Fitxers de dependències generats
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Fitxers de test/coverage
+.coverage
+htmlcov/
+.cache/
+pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+
+# -----------------------------
+# Configuracions IDE/Editor
+# -----------------------------
+# VS Code
+.vscode/
+.code-workspace
+
+# PyCharm
+.idea/
+
+# -----------------------------
+# macOS
+# -----------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# -----------------------------
+# Docker
+# -----------------------------
+# Ignora carpetes generades per volums locals
+docker-data/
+
+# -----------------------------
+# Secrets i variables entorn
+# -----------------------------
+.env
+*.key
+*.pem
+
+# -----------------------------
+# Altres
+# -----------------------------
+# Logs
+*.log
+
+# Power BI cache/temps
+*.tmp

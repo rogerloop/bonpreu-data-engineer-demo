@@ -1,0 +1,70 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Entorns virtuals
+venv/
+ENV/
+env/
+.venv/
+
+# -----------------------------
+# Configuracions IDE/Editor
+# -----------------------------
+.vscode/
+.idea/
+
+# -----------------------------
+# macOS
+# -----------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# -----------------------------
+# Git
+# -----------------------------
+.git
+.gitignore
+
+# -----------------------------
+# Docker i CI/CD
+# -----------------------------
+docker-data/
+.github/
+
+# -----------------------------
+# Secrets i fitxers sensibles
+# -----------------------------
+.env
+*.key
+*.pem
+
+# -----------------------------
+# Tests i cobertura
+# -----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+.tox/
+nosetests.xml
+coverage.xml
+
+# -----------------------------
+# Altres
+# -----------------------------
+*.log
+*.tmp
