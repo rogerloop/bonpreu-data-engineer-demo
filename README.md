@@ -15,6 +15,7 @@ Aquest projecte és una **demo de pipeline ETL (Extract, Transform, Load)** crea
 
 ## 📂 Estructura del projecte
 
+```
 bonpreu-data-engineer-demo/
 ├─ data/
 │   └─ input.csv          # Dataset fals amb dades de vendes
@@ -31,7 +32,7 @@ bonpreu-data-engineer-demo/
 ├─ Dockerfile             # Construcció de la imatge ETL
 ├─ requirements.txt       # Dependències Python
 └─ README.md
-
+```
 
 ---
 
@@ -93,7 +94,8 @@ A la pestanya Actions de GitHub es poden veure els resultats de cada build.
 
 El projecte inclou un dashboard connectat a la taula sales_staging de MySQL.
 
-Exemples de visuals:
+Exemples de visuals: (pendent finalitzar)
+
 	•	Gràfic de barres → vendes totals per producte
 	•	Gràfic de línies → evolució de vendes per data
 	•	KPI → suma de total (ingressos)
