@@ -31,5 +31,5 @@ if __name__ == "__main__":
     print(df.head())
 
     # Per carregar a MySQL (quan tinguis la BD activa amb Docker Compose):
-    # load(df)
-    # print("Loaded data to MySQL")
+    load(df)
+    print("Loaded data to MySQL")

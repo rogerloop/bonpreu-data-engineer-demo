@@ -24,7 +24,9 @@ services:
       MYSQL_URI: mysql+pymysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db:3306/${MYSQL_DATABASE}
     volumes:
       - ./data:/app/data
-    command: ["python", "etl/etl_main.py"]
+      - ./wait-for-db.sh:/app/wait-for-db.sh
+    command: ["bash", "/app/wait-for-db.sh", "db", "3306", "python", "etl/etl_main.py"]
+
 
 volumes:
   db_data:
