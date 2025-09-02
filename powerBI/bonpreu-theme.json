@@ -1,0 +1,34 @@
+{
+  "name": "Bon Preu Corporate Theme",
+  "dataColors": [
+    "#154734",
+    "#F28C00",
+    "#7A1E1E",
+    "#4C9A2A",
+    "#FFD166",
+    "#118AB2",
+    "#073B4C"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#154734",
+  "tableAccent": "#F28C00",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "color": { "solid": { "color": "#154734" } },
+            "fontSize": 13,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "labels": [
+          {
+            "color": { "solid": { "color": "#154734" } },
+            "fontSize": 11
+          }
+        ]
+      }
+    }
+  }
+}
