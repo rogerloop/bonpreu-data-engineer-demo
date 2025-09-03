@@ -94,7 +94,7 @@ A la pestanya Actions de GitHub es poden veure els resultats de cada build.
 
 El projecte inclou un dashboard connectat a la taula sales_staging de MySQL.
 	•	Podeu trobar l'arxiu Power BI en el següent enllaç d'aquest repositori Github:
-	https://github.com/rogerloop/bonpreu-data-engineer-demo/blob/main/powerBI/Bon%20Preu%20Dashboard.pbix
+	[Descarrega Power BI demo BonPreu](https://github.com/rogerloop/bonpreu-data-engineer-demo/blob/main/powerBI/Bon%20Preu%20Dashboard.pbix)
 
 Captura del dashboard (exemple)
 
