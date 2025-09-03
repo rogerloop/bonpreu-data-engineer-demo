@@ -1,6 +1,6 @@
 """
 Script per generar un dataset sintètic de vendes per Bon Preu Demo.
-Crea un fitxer CSV amb 2000 registres (date, product, quantity, price).
+Crea un fitxer CSV amb 4000 registres entre les dates acotades (date, product, quantity, price).
 """
 
 import numpy as np
@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import os
 
-def generate_dataset(output_path="data/input.csv", n_rows=2000, seed=42):
+def generate_dataset(output_path="data/input.csv", n_rows=4000, seed=42):
     np.random.seed(seed)
 
     # Catàleg de productes (nom i preu base en €)
@@ -40,7 +40,7 @@ def generate_dataset(output_path="data/input.csv", n_rows=2000, seed=42):
     ]
 
     # Dates (gener - juny 2025)
-    start_date = datetime(2025, 1, 1)
+    start_date = datetime(2024, 1, 1)
     end_date = datetime(2025, 6, 30)
     days = (end_date - start_date).days + 1
 
