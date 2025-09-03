@@ -98,7 +98,7 @@ El projecte inclou un dashboard connectat a la taula sales_staging de MySQL.
 
 Captura del dashboard (exemple)
 
-![Power BI Dashboard Demo Bon Preu Pag.1](powerBI/Power BI demo BonPreu p1.png)
+![Power BI Dashboard Demo Bon Preu Pag.1](powerBI/Power_BI_demo_BonPreu_p1.png)
 
 (pendent de finalitzar més captures)
 
