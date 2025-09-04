@@ -129,4 +129,4 @@ Exemples de visuals:
 
 Roger Defez
 📍 Osona
-LinkedIn | GitHub
+[LinkedIn](https://www.linkedin.com/in/roger-defez/) | [GitHub](https://github.com/rogerloop)
