@@ -97,18 +97,21 @@ El projecte inclou un dashboard connectat a la taula sales_staging de MySQL.
 	[Descarrega Power BI demo BonPreu](https://github.com/rogerloop/bonpreu-data-engineer-demo/blob/main/powerBI/Bon%20Preu%20Dashboard.pbix)
 
 Captura del dashboard (exemple)
-
-![Power BI Dashboard Demo Bon Preu Pag.1](powerBI/Power_BI_demo_BonPreu_p1.png)
-
-(pendent de finalitzar més captures)
-
-
-Exemples de visuals: (pendent finalitzar)
+Exemples de visuals:
 
 	•	Gràfic de barres → vendes totals per producte
 	•	Gràfic de línies → evolució de vendes per data
 	•	KPI → suma de total (ingressos)
+	•	Exemple DAX - Creació taula Calendar per treballar amb temps intel·ligent
+	
 
+![Power BI Dashboard Demo Bon Preu Pag.1](powerBI/Power_BI_Dashboard_p1.jpg)
+
+![Power BI Dashboard Demo Bon Preu Pag.2](powerBI/Power_BI_Dashboard_p2.jpg)
+
+![Power BI Dashboard Demo Bon Preu Pag.3](powerBI/Power_BI_Dashboard_p3.jpg)
+
+![Power BI Dashboard Demo Bon Preu exemple DAX](powerBI/Power_BI_DAX.jpg)
 
 ⸻
 
