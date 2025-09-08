@@ -30,6 +30,7 @@ if __name__ == "__main__":
     print("Transformed sample:")
     print(df.head())
 
-    # Per carregar a MySQL (quan tinguis la BD activa amb Docker Compose):
+    # Per carregar a MySQL (quan la BD estigui activa amb Docker Compose), 
+    # mentres no estigui activa es pot comentar les 2 línies següents:
     load(df)
     print("Loaded data to MySQL")

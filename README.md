@@ -18,19 +18,29 @@ Aquest projecte és una **demo de pipeline ETL (Extract, Transform, Load)** crea
 ```
 bonpreu-data-engineer-demo/
 ├─ data/
-│   └─ input.csv          # Dataset fals amb dades de vendes
+│   └─ input.csv              # Dataset fals amb dades de vendes (2.000 registres)
 ├─ etl/
-│   └─ etl_main.py        # Script principal ETL
+│   └─ etl_main.py            # Script principal ETL
 ├─ tests/
-│   └─ test_etl.py        # Tests automàtics amb pytest
+│   └─ test_etl.py            # Tests automàtics amb pytest
+├─ powerBI/
+│   ├─ Bon Preu Dashboard.pbix    # Dashboard complet Power BI
+│	├─ Bbonpreu-theme.json		  # "theme" corporatiu Bon Preu per importar a Power BI
+│   ├─ Power_BI_Dashboard_p1.jpg
+│   ├─ Power_BI_Dashboard_p2.jpg
+│   ├─ Power_BI_Dashboard_p3.jpg
+│   └─ Power_BI_DAX.jpg
 ├─ .github/
 │   └─ workflows/
-│       └─ ci.yml         # Workflow GitHub Actions (CI/CD)
+│       └─ ci.yml             # Workflow GitHub Actions (CI/CD)
 ├─ .dockerignore
-├─ .env.example           # Exemple de variables d’entorn
-├─ docker-compose.yml     # Per aixecar MySQL + ETL amb Docker
-├─ Dockerfile             # Construcció de la imatge ETL
-├─ requirements.txt       # Dependències Python
+├─ .gitignore
+├─ .env.example               # Exemple de variables d’entorn
+├─ docker-compose.yml         # Per aixecar MySQL + ETL amb Docker
+├─ Dockerfile                 # Construcció de la imatge ETL
+├─ requirements.txt           # Dependències Python
+├─ generate_data.py           # Script Python per generar automàticament quan es desitgi, el input.csv amb dades sintètiques
+├─ wait-for-db.sh             # Script de sistema - evita que docker-compose.yml executi ETL abans que respongui MySQL
 └─ README.md
 ```
 
