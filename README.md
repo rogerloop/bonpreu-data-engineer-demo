@@ -1,5 +1,7 @@
 # Bonpreu Data Engineer Demo
 
+📄 Versions: [English](README_EN.md) | [Català](README.md)
+
 Aquest projecte és una **demo de pipeline ETL (Extract, Transform, Load)** creada per mostrar coneixements clau en el rol d’**Enginyer de Dades** a Bon Preu S.A.U.
 
 ---
