@@ -13,6 +13,17 @@ Aquest projecte és una **demo de pipeline ETL (Extract, Transform, Load)** crea
 
 ---
 
+## 🛠 Reptes trobats i resolts
+- Desenvolupament inicial en mac xip M3 **MacOS amb VSC i Docker Desktop**.  
+- Power BI només funciona a Windows → Al no tenir PC vaig usar un **Mac antic amb Windows 10 en BootCamp**.  
+- Docker no funcionava bé en aquest entorn → vaig aixecar una **màquina Ubuntu amb VirtualBox**.  
+- Allà vaig desplegar MySQL via Docker Compose i vaig connectar-lo a Power BI a Windows.  
+- Va ser necessari configurar correctament Power Query per netejar i importar les dades.  
+
+Aquest procés reflecteix adaptabilitat i resolució de problemes en entorns mixtos.
+
+---
+
 ## 📂 Estructura del projecte
 
 ```
@@ -46,7 +57,41 @@ bonpreu-data-engineer-demo/
 
 ---
 
-## 🚀 Execució local
+## 🧑🏽‍💻 Com arrencar o visualitzar el prjecte (Guia pas a pas)
+
+### 1️⃣ Descàrrega del projecte (clone)
+**Directori on posar el projecte, per exemple Documents - Clonar el repositori (usa l'enllaç) - Entrar al directori del projecte**
+```bash
+cd ~/Documents
+git clone https://github.com/rogerloop/bonpreu-data-engineer-demo.git
+cd bonpreu-data-engineer-demo
+```
+
+### 2️⃣ Preparar el fitxer .env (important)
+Al repo trobarás un fitxer .env.exemple, localment has de crear un .env a partir de l’exemple perquè les connexions (MySQL, etc.) funcionin. Canviant de nom l'existent o copiant i donant-li nom .env (a continuació exemple per fer-ho)
+
+macOS / Linux
+```bash
+cp .env.example .env
+```
+Windows (CMD)
+```bash
+copy .env.example .env
+```
+Windows (PowerShell)
+```bash
+Copy-Item .env.example .env
+```
+
+Després si es vol o necesita editar .env amb un editor de text (Visual Studio Code, Notepad, nano…) i posar les credencials reals o les que es vulgui per fer proves. (Important, aquest fitxer .env s'ha d'incloure a .gitignore i no s'ha de pujar mai a Github)
+
+### 3️⃣ Triar la modalitat d’execució
+Triar una de les tres modalitats d'execució del projecte.
+- **Opció A — Execució local (Python venv):** millor si es vol personalitzar instal·lació o modificar parts del codi.
+- **Opció B — Docker (ETL en contenidor):** bo si no es vol instal·lar Python local; només és necessari Docker. Recomanat per provar ETL aïllat.
+- **Opció C — Docker Compose (recomanat per demo completa):** aixeca MySQL + ETL amb 1 comanament. Recomanat si es vol que es reprodueixi la demo exactament. 
+
+## 🚀 Opció A — Execució local
 
 1. Crear entorn virtual i instal·lar dependències:
 ```bash
@@ -63,14 +108,14 @@ python etl/etl_main.py
 ```bash
 pytest tests/
 ```
-## 🐳 Execució amb Docker
+## 🐳 Opció B — Execució amb Docker (ETL en contenidor)
 
 Construir i executar el contenidor de l’ETL:
 ```bash
 docker build -t bonpreu-etl-demo .
 docker run --rm bonpreu-etl-demo
 ```
-## 🐙 Execució amb Docker Compose (MySQL + ETL)
+## 🐙 Opció C — Execució amb Docker Compose (MySQL + ETL)
 
 Requisit previ: crear .env a partir de .env.example
 ```bash
@@ -79,9 +124,11 @@ cp .env.example .env
 docker compose up --build
 ```
 	•	Això aixeca un contenidor amb MySQL i executa l’ETL.
-	•	Si vols carregar dades a MySQL, descomenta la crida load(df) al fitxer etl/etl_main.py.
+	•	Si no vols carregar dades a MySQL, comenta la crida load(df) al fitxer etl/etl_main.py.
 
-✅ Tests
+---
+
+### ✅ Tests
 
 Aquest projecte inclou tests bàsics amb pytest.
 S’executen tant localment com automàticament amb GitHub Actions en cada push.
@@ -89,9 +136,13 @@ S’executen tant localment com automàticament amb GitHub Actions en cada push.
 ```bash
 pytest tests/
 ```
-🐙 CI/CD amb GitHub Actions
+
+---
+
+### 🐙 Automatització CI/CD amb GitHub Actions
 
 El workflow es troba a .github/workflows/ci.yml i executa:
+
 	•	Instal·lació de dependències
 	•	Execució de tests
 	•	Construcció de la imatge Docker
@@ -100,13 +151,15 @@ A la pestanya Actions de GitHub es poden veure els resultats de cada build.
 
 ⸻
 
-📊 Dashboard Power BI
+### 📊 Dashboard Power BI (Només disponible a Windows)
 
 El projecte inclou un dashboard connectat a la taula sales_staging de MySQL.
-	•	Podeu trobar l'arxiu Power BI en el següent enllaç d'aquest repositori Github:
+	• Podeu trobar l'arxiu Power BI en el següent enllaç d'aquest repositori Github:
 	[Descarrega Power BI demo BonPreu](https://github.com/rogerloop/bonpreu-data-engineer-demo/blob/main/powerBI/Bon%20Preu%20Dashboard.pbix)
 
-Captura del dashboard (exemple)
+Recordatori: Si es fan modificacions a l'arxiu .env i a les dades de conexió de MySQL s'haurà de modificar les dades de conexió al Power BI si es volen fer actualitzacions mitjançant Power Query
+
+Adjunto captura del dashboard (exemple)
 Exemples de visuals:
 
 	•	Gràfic de barres → vendes totals per producte
@@ -125,7 +178,7 @@ Exemples de visuals:
 
 ⸻
 
-🔗 Recursos i eines utilitzades
+### 🔗 Recursos i eines utilitzades
 	•	Python Pandas
 	•	SQLAlchemy
 	•	MySQL
