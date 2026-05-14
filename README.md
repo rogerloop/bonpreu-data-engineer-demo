@@ -59,7 +59,7 @@ bonpreu-data-engineer-demo/
 
 ---
 
-## 🧑🏽‍💻 Com arrencar o visualitzar el prjecte (Guia pas a pas)
+## 🧑🏽‍💻 Com arrencar o visualitzar el projecte (Guia pas a pas)
 
 ### 1️⃣ Descàrrega del projecte (clone)
 **Directori on posar el projecte, per exemple Documents - Clonar el repositori (usa l'enllaç) - Entrar al directori del projecte**
